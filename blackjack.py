@@ -493,7 +493,7 @@ while game_on:
                                 # asks input from the player
                                 if (
                                     dealer_ace_hand_val < 18
-                                    and player_ace_hand_val > dealer_ace_hand_val
+                                    and player_ace_hand_val >= dealer_ace_hand_val
                                 ):
                                     input("Press Enter to continue! ")
 
@@ -625,8 +625,16 @@ while game_on:
 
                                 bust = True
 
-                            # ask for playing input
-                            if dealer_ace_hand_val < 18:
+                            # break the loop if the player's hand value is lower than
+                            # the dealer's hand value
+                            if (
+                                player_ace_hand_val < dealer_ace_hand_val
+                                and dealer_ace_hand_val < 18
+                            ):
+                                break
+
+                            # ask for player input
+                            elif dealer_ace_hand_val < 18:
                                 input("Press Enter to continue! ")
 
                         # check for the round winner after both hands are shown
