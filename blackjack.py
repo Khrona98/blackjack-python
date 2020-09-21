@@ -703,7 +703,7 @@ while game_on:
                             print()
 
                             # readjust the player balance
-                            bank.balance += bet * 2
+                            bank.balance += bet
                             print("THE PLAYER WINS THE ROUND!")
                             print()
 
@@ -724,7 +724,7 @@ while game_on:
                                 print()
 
                                 # readjust the player balance
-                                bank.balance += bet * 2
+                                bank.balance += bet
                                 print("THE PLAYER WINS THE ROUND!")
                                 print()
 
@@ -765,7 +765,7 @@ while game_on:
                                 print()
 
                                 # readjust the player balance
-                                bank.balance += bet * 2
+                                bank.balance += bet
                                 print("THE PLAYER WINS THE ROUND!")
                                 print()
 

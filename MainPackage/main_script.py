@@ -84,7 +84,7 @@ class Deck:
         """Display a full standard french deck of cards."""
         # NOTE: part of the code below must be within brackets to work properly
         return (
-            f"French Deck: "
+            "French Deck: "
             f"{', '.join([Card.__str__(cards) for cards in self.french_deck])}"
         )
 
