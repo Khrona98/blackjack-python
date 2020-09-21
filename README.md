@@ -1,6 +1,8 @@
 # blackjack-python
 A simple Blackjack game made in Python for learning purposes.
 
+![Blackjack in Python](/preview_screenshot.png)
+
 ## Dependencies
 Python 3.x
 
